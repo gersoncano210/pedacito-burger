@@ -1,0 +1,14 @@
+<section class="menu-section">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-grid">
+      @for( item of menu ; track $index ){
+        <div class="menu-item">  
+          <img [src]="item.image" alt="hamburguesa" />
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <span class="price">{{ item.price | currency:'COP' }}</span>
+        </div>
+      }
+    </div>
+  </section>
+  

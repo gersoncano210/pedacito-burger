@@ -1,0 +1,86 @@
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+              url('/images/bg-grill.jpg') no-repeat center center / cover;
+  color: #fdf5e6; /* color crema */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-text h1 span {
+  color: #ffc107;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.btn-primary {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6e4425;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-logo {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+}

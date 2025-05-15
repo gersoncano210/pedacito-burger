@@ -1,0 +1,38 @@
+.about-section {
+    background-color: #1f1f1f;
+    color: #f5f5dc;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    color: #ffcc70;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .about-content img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .text strong {
+    color: #a8e6cf;
+  }
+  
