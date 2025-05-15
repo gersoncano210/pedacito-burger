@@ -8,11 +8,11 @@
       &#9776;
     </button>
 
-    <ul class="nav-links">
-      <li><a routerLink="/">Inicio</a></li>
-      <li><a routerLink="/menu">Menú</a></li>
-      <li><a routerLink="/locations">Ubicaciones</a></li>
-      <li><a routerLink="/about">Sobre Nosotros</a></li>
+    <ul [class]="isMenuOpen ? 'nav-links active' :'nav-links'">
+      <li><a routerLink="/" routerLinkActive="ddd">Inicio</a></li>
+      <li><a routerLink="/menu" routerLinkActive="ddd">Menú</a></li>
+      <li><a routerLink="/locations" routerLinkActive="ddd">Ubicaciones</a></li>
+      <li><a routerLink="/about" routerLinkActive="ddd">Sobre Nosotros</a></li>
     </ul>
   </nav>
 
